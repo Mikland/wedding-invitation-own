@@ -1,0 +1,324 @@
+/*
+Colours
+    default text color: #444349 (grey)
+    alternate text color: #d2ba87 (gold)
+    dark background: hsla(100,0%,0%,.6);
+    link color: #bd806e
+    link color on hover: #eda087
+
+@Media: 400px, 800px, max 1100px.
+
+Images
+    background pattern: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png
+    cover photo: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg
+    ceremony location: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-ceremony.png
+    photoshoot location: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-photoshoot.png
+    party location: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-party.png
+    gifts: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-gifts.png
+    favicon: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-favicon.png
+  
+Fonts
+    Great Vibes
+    Libre Baskerville
+    Muli
+*/
+
+/*===GENERAL===*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  vertical-align: super;
+  font-size: .6rem;
+}
+
+.locations h2, .program h2, .times h2, .gifts h2, .questions h2, .contact h2 {
+  padding-left: .3rem;
+}
+
+strong {
+  transition: .5s ease-in-out;
+}
+
+strong:hover {
+  color: red;
+  font-size: 1.1rem;
+}
+
+/*===TYPOGRAPHY===*/
+
+h1, h2, h3, h4 {
+  color: #444349;
+  font-family: 'Libre Baskerville';
+}
+
+header h1, header h2, header h3 {
+  font-family: 'Great Vibes';
+  text-shadow: 2px 2px 1px #d4af37;
+}
+
+header h1 {
+  font-size: 11vw;
+  max-width: 1100px;
+}
+
+header h2 {
+  font-size: 7vw;
+}
+
+header h3 {
+  font-size: 5vw;
+}
+
+p, q, ul, li {
+  color: #444349;
+  font-family: 'Muli';
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+p, q ul, a {
+  font-size: 1rem;
+}
+
+/*===HEADER===*/
+
+header {
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.header {
+  margin-top: -25vw;
+}
+
+/*===CONTENT===*/
+
+.content {
+  margin-top: 2.5rem;
+}
+
+.content img, .gifts img {
+  width: 10vh;
+  text-align: center;
+}
+
+/*===LOCATIONS===*/
+
+.locations h2 {
+  text-align: left;
+  margin-bottom: 5vh;
+}
+
+.ceremony, .photo-shoot, .party {
+  width: 33%;
+  float: left;
+  text-align: center;
+  margin-bottom: 6vh;
+  padding: 0 .15rem;
+}
+
+.ceremony h4, .photo-shoot h4, .party h4 {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.photo-shoot {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/*===PROGRAM===*/
+
+.program {
+  clear: left;
+}
+
+.program h2 {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.program-tag {
+  text-align: center;
+  margin: 1rem;
+}
+
+/*===TIMES===*/
+
+.times p {
+  margin: 1.5rem;
+}
+
+
+/*===GIFTS===*/
+
+.gifts img {
+  float: left;
+  margin: 1.5rem;
+}
+
+.gifts p {
+  padding-top: 3rem;
+}
+
+/*===Q&A===*/
+
+.questions {
+  clear: both;
+  margin: 5vh 0;
+}
+
+.questions h2 {
+  margin: 1.5rem 0;
+}
+
+.questions h3 {
+  margin-left: 1.5vw;  
+}
+
+.questions p {
+  margin: 4vw;
+}
+
+/*===CONTACT===*/
+
+.contact ul {
+  margin: 3vw;
+}
+
+.phone {
+  list-style-type: circle;
+  margin-left: 18px;
+}
+
+/*===FOOTER===*/
+
+footer {
+  background: #606060;
+  width: 100%;
+  height: 4rem;
+  margin-top: 1rem;
+  text-align: center;
+  display: table;
+}
+
+.footer {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+small {
+  font-size: .8rem;
+  width: 100%;
+  color: #d2ba87;
+}
+
+.footer-link {
+  margin-top: .5rem;
+}
+
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+  color: #bd806e;
+  transition: .2s linear;
+}
+
+footer a:hover {
+  color: #eda087;
+}
+
+/*===RESPONSIVE MEDIA===*/
+
+@media (min-width: 768px) {
+  .travel, .food, .other {
+    width: 33%;
+    float: left;
+  }
+  .food p, .other p {
+    padding-top: 1.2rem;
+  }
+  .food {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+  .contact {
+    clear: left;
+  }
+}
+
+@media (min-width: 879px) {
+  .food p, .other p {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1013px) {
+  body {
+    width: 1013px;
+    position: relative;
+  }
+  .header {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+    top: 405px;
+  }
+  .header h1 {
+    font-size: 6.95rem;
+  }
+  .header h2 {
+    font-size: 4.45rem;
+  }
+  .header h3 {
+    font-size: 3.15rem;
+  }
+  .locations {
+    margin-top: -15px;
+}
